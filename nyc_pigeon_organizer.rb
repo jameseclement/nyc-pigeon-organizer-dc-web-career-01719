@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
   data.each {|description, value|
   
   value.each {|array, bird|
+  binding.pry
   bird.each {|name|
   organized_data[name] = {color: [], gender: [], lives: []}
   }
